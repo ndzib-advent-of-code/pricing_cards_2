@@ -1,0 +1,140 @@
+html {
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    /* font-size: 14px; */
+}
+
+body {
+    background-color: #EBEEF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pricing-table {
+    width: fit-content;
+}
+
+.header {
+    gap: 20px;
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header > .title {
+    font-size: 24px;
+}
+
+.slider {
+    margin-left: auto;
+
+    background-color: #D4D9E0;
+    border: none;
+    border-radius: 5000px;
+    padding: 4px;
+    display: flex;
+    opacity: .9;
+}
+
+.slider > * {
+    cursor: pointer;
+    display: block;
+    width: 70px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.slider > :last-child {
+    background-color: white;
+    border-radius: 500px;
+
+    box-shadow: 0 2px 5px 5px rgba(0, 0, 0, .1);
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card > .title {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.card > .subtitle {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.card > .subtitle > .price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card > .subtitle > :not(.price) {
+    opacity: .8;
+}
+
+.card > .content {
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: .7;
+}
+
+.button {
+    cursor: pointer;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.button-filled {
+    background-color: #171922;
+    color: #F0F0F1;
+}
+
+.button-outline {
+    color: #171922;
+    background-color: transparent;
+    border: 2px solid #A0A0A1;
+}
+
+.options {
+    display: flex;
+    gap: 35px;
+}
+
+.highlighted {
+    box-shadow: 0 5px 15px 10px rgba(0, 0, 0, .1);
+}
+
+@media only screen and (max-width: 600px) {
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header {
+
+        flex-direction: column;
+    }
+}
